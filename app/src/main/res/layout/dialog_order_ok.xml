@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择课题组和支出渠道"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="课题组："
+            android:textSize="14sp"
+            android:gravity="right"
+            />
+        <Spinner
+            android:id="@+id/sp_teamName_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="支出渠道："
+            android:textSize="14sp"
+            android:gravity="right"
+            />
+        <EditText
+            android:id="@+id/et_projFeeFrom_dialog"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+            android:background="@drawable/edittext_style"
+            android:hint="支出渠道"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btn_review_ok_dialog"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+            android:text="通过审核"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_review_ok_selector"
+            />
+        <Button
+            android:id="@+id/btn_review_cancel_dialog"
+            android:layout_width="70sp"
+            android:layout_height="30sp"
+            android:text="取消"
+            android:background="@drawable/btn_review_cancel_selector"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

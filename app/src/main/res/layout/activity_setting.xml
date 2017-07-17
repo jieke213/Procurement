@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/mygrey"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/logout_selector"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

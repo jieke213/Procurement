@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/mygrey"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/caas_logo"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http://www.caasbuy.com"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="3dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国农业科学院上海兽医研究所 版权所有"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="沪ICP备17024302号-1"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司地址：上海市闵行区紫月路518号 邮编：200241"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright © 2016-2020"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

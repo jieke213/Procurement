@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_myorder4buyer"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/mygrey"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#f0f0f0"
+        >
+        <TextView
+            android:id="@+id/tv_myorder4lbuyer_all"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="所有订单"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_myorder4buyer_unclaimed"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未报销订单"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_myorder4buyer_delivered"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未到货订单"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_myorder4buyer_notPass"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="失败订单"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_tab_myorder4buyer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF2D2D" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_myorder4buyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

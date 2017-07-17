@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="up">#FF4081</color>
+    <color name="down">#AA4081</color>
+    <color name="mygrey">#F0F0F0</color>
+    <color name="mygrey2">#F7F7F7</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="gray">#444444</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#45C01A</color>
+    <color name="blue">#0000aa</color>
+    <color name="red">#FF5151</color>
+    <color name="red2">#AE0000</color>
+    <color name="yellow">#F75000</color>
+    <color name="green_up">#A6FFA6</color>
+    <color name="green_down">#53FF53</color>
+    <color name="red_up">#FF9797</color>
+    <color name="red_down">#FF2D2D</color>
+    <color name="green2_down">#28FF28</color>
+    <color name="green2_up">#F0FFF0</color>
+    <color name="red2_up">#FFD2D2</color>
+    <color name="red2_down">#FF2D2D</color>
+    <color name="blue_down">#003D79</color>
+    <color name="blue_up">#2894FF</color>
+    <color name="blue_1">#4A4AFF</color>
+    <color name="pink">#FF0080</color>
+
+    <color name="yellow_detail">#A5A552</color>
+    <color name="yellow_up">#FF8000</color>
+    <color name="yellow_down">#BB3D00</color>
+    <color name="yellow_kefu">#FFFF37</color>
+
+
+	<color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+	
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_replace"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/blue_1"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换货"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请填写换货的原因"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                />
+            <EditText
+                android:id="@+id/et_msg_replace"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/edittext_style"
+                android:hint="换货的原因"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_replace"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="换货"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_review_cancel_selector"
+            />
+    </LinearLayout>
+
+</LinearLayout>

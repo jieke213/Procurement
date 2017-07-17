@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.tencent.tinker.patch'
+//apply from: 'tinkerpatch.gradle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "cn.net.caas.procurement"
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile files('libs/volley.jar')
+    compile files('libs/gson-2.5.jar')
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'fr.baloomba:viewpagerindicator:2.4.2'
+    //    compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
+    compile files('libs/zxing.jar')
+    compile files('libs/svg-android.jar')
+
+//    //可选，用于生成application类
+//    provided('com.tencent.tinker:tinker-android-anno:1.7.11')
+//    //tinker的核心库
+//    compile('com.tencent.tinker:tinker-android-lib:1.7.11')
+//
+//    // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
+//    provided("com.tinkerpatch.tinker:tinker-android-anno:1.7.11")
+//    compile("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.1.7")
+}

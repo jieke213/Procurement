@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_buyerapplyclaims"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/blue_1"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申请报销"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:text="浏览发票图片"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_upload_selector"
+            android:textSize="17sp"
+            android:textColor="@color/yellow"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/edittext_style_arrivalquantity"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="无发票图片"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:text="发票上传中......"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/red"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_buyerapplyclaims"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="申请报销"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_review_ok_selector"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#00BB00"
+        android:elevation="4dp">
+
+        <cn.net.caas.procurement.view.MyTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_color="#0551A5"
+            app:text_size="19sp"
+            android:layout_gravity="center"
+            app:duration="200"
+            android:layout_marginRight="50dp"
+            />
+
+        <!--
+        <TextView
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="欢   迎   登   录   农   科   院   采   购   平   台"
+            android:textColor="#0551A5"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            />
+        -->
+
+        <!--
+        <TextView android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center"
+            android:textColor="#0551A5"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"/>
+        -->
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/user_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/image_login" />
+
+    <!--
+    <EditText
+        android:id="@+id/et_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/username"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="用户名"
+        android:gravity="left"
+        />
+    -->
+
+    <!--
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:drawableRight="@drawable/password_invisible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="密  码"
+        android:gravity="center"
+        />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/username"
+            />
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="用户名"
+            android:gravity="center"
+            android:background="@null"
+            />
+        <TextView
+            android:layout_width="30sp"
+            android:layout_height="18sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password"
+            />
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="密  码"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:background="@null"
+            />
+        <Button
+            android:id="@+id/btn_login_pwd"
+            android:layout_width="24sp"
+            android:layout_height="14sp"
+            android:background="@drawable/password_invisible"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/cb_save_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="保存登录信息"
+        android:checked="true"
+        android:visibility="gone"
+        />
+    <!--android:background="@drawable/btn_login_selector"-->
+    <!--android:background="@drawable/btn_login_roundcorner"-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:text="登  录"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_login_roundcorner"
+        />
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点此注册"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:textColor="@drawable/btn_register"
+        android:visibility="gone"
+        />
+</LinearLayout>

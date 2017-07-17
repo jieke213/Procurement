@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipelayout_instiutetoclaimereview_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_instiutetoclaimereview_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/mygrey"
+                android:dividerHeight="10sp"
+                >
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_progress_instiutetoclaimereview_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载..." />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_NoOrder_instiutetoclaimereview_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无订单"
+            android:visibility="invisible"
+            android:textSize="20sp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

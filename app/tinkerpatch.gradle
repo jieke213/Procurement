@@ -1,0 +1,78 @@
+//apply plugin: 'tinkerpatch-support'
+//
+///**
+// * TODO: 请按照自己的需要修改为适应自己工程参数
+// */
+//def bakPath=file("${buildDir}/bakApk/")
+//def baseInfo="app-1.0.0-0330-20-37-31"
+//def variantName="release"
+//
+///**
+// * 对于插件各参数的详细解析请参考
+// * http://tinkerpath.com/Docs/SDK
+// */
+//tinkerpatchSupport{
+//    /** 可以在debug的时候关闭 tinkerpath **/
+//    tinkerEnable=true;
+//    reflectApplication=true;
+//    autoBackupApkPath="${bakPath}"
+//    appKey="db1ddfc8e469855c" //申请的appKey
+//
+//    /** 注意：若发布新的全量包，appVersion一定要更新 **/
+//    appVersion="1.0.0"
+//    def pathPrefix="${bakPath}/${baseInfo}/${variantName}/"
+//    def name="${project.name}-${variantName}"
+//    baseApkFile="${pathPrefix}/${name}.apk"
+//    baseProguardMappingFile="${pathPrefix}/${name}-mapping.txt"
+//    baseResourceRFile="${pathPrefix}/${name}-R.txt"
+//
+//    /**
+//     * 若有变异多flavors需求，可以参考：
+//     * https://github.com/TinkerPatch/tinkerpatch-flavor-sample
+//     * 注意：除非你不同的flavor代码是不一样的，
+//     * 不然建议采用zip comment或者文件方式生成渠道信息（相关工具：walle 或者 packer-ng）
+//     **/
+//}
+//
+///**
+// * 用于用户在代码中判断tinkerPatch是否被使能
+// */
+//android {
+//    defaultConfig {
+//        buildConfigField "boolean","TINKER_ENABLE","${tinkerpatchSupport.tinkerEnable}"
+//    }
+//}
+//
+///**
+// * 一般来说，我们无需对下面的参数做任何的修改
+// * 对于各参数的详细介绍请参考：
+// * https:/github.com/Tencent/tinker/wiki/Tinker-
+// */
+//tinkerPatch{
+//    ignoreWarning=false
+//    useSign=true
+//    dex {
+//        dexMode="jar"
+//        pattern=["classes*.dex"]
+//        loader=[]
+//    }
+//    lib {
+//        pattern=["lib/*/*.so"]
+//    }
+//
+//    res {
+//        pattern=["res/*","r/*","assets/*","resources.arsc","AndroidManifest.xml"]
+//        ignoreChange=[]
+//        largeModSize=100
+//    }
+//    packageConfig {
+//
+//    }
+//    sevenZip {
+//        zipArtifact="com.tencent.mm:SevenZip:1.1.10"
+//        // path="/usr/local/bin/7za"
+//    }
+//    buildConfig {
+//        keepDexApply=false
+//    }
+//}

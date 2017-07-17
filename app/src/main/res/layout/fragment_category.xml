@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_other"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/red"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <ListView
+            android:id="@+id/lv_category"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        </ListView>
+
+        <TextView
+            android:layout_width="10sp"
+            android:layout_height="match_parent"
+            android:background="@color/mygrey"
+            />
+
+        <FrameLayout
+            android:id="@+id/framelayout_category"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

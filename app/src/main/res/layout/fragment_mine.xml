@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/red"
+        android:elevation="4sp">
+
+        <ImageView
+            android:id="@+id/btn_setting_mine"
+            android:layout_width="30sp"
+            android:layout_height="25sp"
+            android:src="@drawable/settings"
+            android:tint="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="控制台"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/mygrey"
+                    />
+            </LinearLayout>
+
+            <!--<GridView-->
+                <!--android:id="@+id/gv_mine"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:numColumns="3"-->
+                <!--&gt;-->
+            <!--</GridView>-->
+
+            <cn.net.caas.procurement.view.MyGridView
+                android:id="@+id/gv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                >
+            </cn.net.caas.procurement.view.MyGridView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                android:background="@color/mygrey"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="常用工具"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/mygrey"
+                    />
+            </LinearLayout>
+
+            <!--<GridView-->
+            <!--android:id="@+id/gv_common"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:numColumns="4"-->
+            <!--&gt;-->
+            <!--</GridView>-->
+
+            <!--<ListView-->
+                <!--android:id="@+id/lv_common"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+            <!--</ListView>-->
+
+            <LinearLayout
+                android:id="@+id/layout_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            </LinearLayout>inearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

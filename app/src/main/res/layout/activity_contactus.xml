@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_contactus"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/mygrey"
+        android:elevation="4sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系我们"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="140sp"
+                android:layout_height="140sp"
+                android:background="@drawable/kefu_roundcorner"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/contact_us"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/contactus_roundcorner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="技术咨询:   "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="021-34293156"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/contactus_roundcorner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="业务加盟:   "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="021-34293599"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/contactus_roundcorner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="广告咨询:   "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="021-34293599"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/contactus_roundcorner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="官方QQ:   "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="3328392595"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/contactus_roundcorner"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="客服邮箱:   "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="info@shvri.ac.cn"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
