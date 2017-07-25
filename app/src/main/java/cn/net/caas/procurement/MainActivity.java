@@ -62,11 +62,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setTabSelection(0);//第一次开启程序时默认打开的fragment
 
-        //在此处添加一行
-        //第二行
-        //第三行
-        //第四行
-        //第五行
     }
 
     private void initView() {
