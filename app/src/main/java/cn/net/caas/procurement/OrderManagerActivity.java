@@ -70,6 +70,7 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
 
 //        showMenu();
         showMenu2();
+        //一行
     }
 
     //显示菜单（第一种方法：不显示消息数）
