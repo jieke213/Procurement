@@ -202,7 +202,7 @@ public class FragmentInstiuteToclaimeReview extends Fragment {
         VolleyUtil.get(Constants.ORDER_BOSS_TOCLAIME + "access_token=" + token, new VolleyUtil.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
-                int leadertoclaimereviewNum=0;
+                int instiutetoclaimereviewNum=0;
                 JSONArray jsonArray = jsonObject.optJSONArray("data");
                 if (jsonArray==null){
                     handler.sendEmptyMessage(4);
@@ -241,7 +241,7 @@ public class FragmentInstiuteToclaimeReview extends Fragment {
                                     Log.i("123","itemName:"+itemName+",quantity:"+quantity+",unitPriceStr:"+unitPriceStr+",allQuantity:"+allQuantity);
                                     list_goods.add(new MyGoods(buyerNick, teamName, leaderNick, projFeeFrom, itemName,unitPriceStr,quantity));
                                 }
-                                leadertoclaimereviewNum++;
+                                instiutetoclaimereviewNum++;
                                 list_instiutetoclaimereview.add(new MyAllOrder(ID,caasOrderId,ID2,supplierOrderId,sellerNick,status4supplierOrder,list_goods,allQuantity,amountStr));
                             }
                         }
@@ -250,7 +250,7 @@ public class FragmentInstiuteToclaimeReview extends Fragment {
                     adapter.isShowLeaderButton=true;
                     adapter.isShowInstiuteButton=true;
                     handler.sendEmptyMessage(1);
-                    if (leadertoclaimereviewNum==0){
+                    if (instiutetoclaimereviewNum==0){
                         handler.sendEmptyMessage(3);
                     }
                 }

@@ -199,7 +199,7 @@ public class FragmentInstiuteBuyReview extends Fragment {
         VolleyUtil.get(Constants.ORDER_BOSS_REVIEW + "access_token=" + token, new VolleyUtil.Listener() {
             @Override
             public void onResponse(JSONObject jsonObject) {
-                int leaderbuyreviewNum=0;
+                int instiutebuyreviewNum=0;
                 JSONArray jsonArray = jsonObject.optJSONArray("data");
                 if (jsonArray==null){
                     handler.sendEmptyMessage(4);
@@ -237,7 +237,7 @@ public class FragmentInstiuteBuyReview extends Fragment {
                                 Log.i("123","itemName:"+itemName+",quantity:"+quantity+",unitPriceStr:"+unitPriceStr+",allQuantity:"+allQuantity);
                                 list_goods.add(new MyGoods(buyerNick, teamName, leaderNick, projFeeFrom, itemName,unitPriceStr,quantity));
                             }
-                            leaderbuyreviewNum++;
+                            instiutebuyreviewNum++;
                             list_instiutebuyreview.add(new MyAllOrder(ID,caasOrderId,ID2,supplierOrderId,sellerNick,status,list_goods,allQuantity,amountStr));
                         }
                         list.add(new MyOrder4BuyReview(list_instiutebuyreview,status,ID,caasOrderId));
@@ -246,7 +246,7 @@ public class FragmentInstiuteBuyReview extends Fragment {
                     adapter.isShowLeaderButton=true;
                     adapter.isShowInstiuteButton=true;
                     handler.sendEmptyMessage(1);
-                    if (leaderbuyreviewNum==0){
+                    if (instiutebuyreviewNum==0){
                         handler.sendEmptyMessage(3);
                     }
                 }
