@@ -289,4 +289,15 @@ public class FragmentChecked4All extends Fragment {
             }
         }
     };
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        checkedActivity.unregisterReceiver(myReceiver);
+    }
 }

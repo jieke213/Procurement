@@ -281,4 +281,15 @@ public class FragmentMyOrder4Delivered4Buyer4Leader extends Fragment {
             }
         }
     };
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        myOrderActivity4Leader.unregisterReceiver(myReceiver);
+    }
 }

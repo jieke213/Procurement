@@ -303,4 +303,18 @@ public class FragmentLeaderBuyReview extends Fragment {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        Log.i("123","onDestroyView");
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i("123","onDestroy");
+        leaderBuyReviewActivity.unregisterReceiver(myReceiver);
+    }
 }

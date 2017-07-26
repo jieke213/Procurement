@@ -281,4 +281,15 @@ public class FragmentCaiwu4All extends Fragment {
             }
         }
     };
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        caiwuActivity.unregisterReceiver(myReceiver);
+    }
 }

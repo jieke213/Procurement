@@ -291,4 +291,15 @@ public class FragmentLeaderToclaimeReview extends Fragment {
             }
         }
     };
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        leaderToclaimeReviewActivity.unregisterReceiver(myReceiver);
+    }
 }

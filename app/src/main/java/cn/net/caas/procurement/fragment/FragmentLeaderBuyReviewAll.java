@@ -286,4 +286,18 @@ public class FragmentLeaderBuyReviewAll extends Fragment {
             }
         }
     };
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        Log.i("123","All_onDestroyView");
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i("123","All_onDestroy");
+        leaderBuyReviewActivity.unregisterReceiver(myReceiver);
+    }
 }

@@ -291,4 +291,15 @@ public class FragmentInstiuteToclaimeReviewAll extends Fragment {
     private void toast(String str) {
         Toast.makeText(instiuteToclaimeReviewActivity, str, Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        instiuteToclaimeReviewActivity.unregisterReceiver(myReceiver);
+    }
 }

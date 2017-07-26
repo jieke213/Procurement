@@ -170,12 +170,6 @@ public class FragmentMyOrder4Unclaimed4Buyer4Leader extends Fragment {
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.i("123","---------------onDestroy---------------");
-    }
-
-    @Override
     public void onDetach() {
         super.onDetach();
         Log.i("123","---------------onDetach---------------");
@@ -313,5 +307,17 @@ public class FragmentMyOrder4Unclaimed4Buyer4Leader extends Fragment {
 
     private void toast(String str){
         Toast.makeText(myOrderActivity4Leader, str, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i("123","---------------onDestroy---------------");
+        myOrderActivity4Leader.unregisterReceiver(myReceiver);
     }
 }
