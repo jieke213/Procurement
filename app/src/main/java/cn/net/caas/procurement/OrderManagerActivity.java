@@ -22,14 +22,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.net.caas.procurement.adapter.MineAdapter;
-import cn.net.caas.procurement.adapter.OrderAdapter;
-import cn.net.caas.procurement.adapter.OrderAdapter4BuyReview;
 import cn.net.caas.procurement.adapter.ReviewAdapter;
 import cn.net.caas.procurement.constant.Constants;
 import cn.net.caas.procurement.entity.Mine;
-import cn.net.caas.procurement.entity.MyAllOrder;
-import cn.net.caas.procurement.entity.MyGoods;
-import cn.net.caas.procurement.entity.MyOrder4BuyReview;
 import cn.net.caas.procurement.entity.MyReview;
 import cn.net.caas.procurement.util.VolleyUtil;
 
@@ -69,15 +64,30 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
         sp=getSharedPreferences(Constants.LOGIN_INFO,MODE_PRIVATE);
         access_token = sp.getString(Constants.ACCESS_TOKEN, "error");
 
-//        showMenu();
-        showMenu2();
+        /**
+         * 登录课题组长账号和所领导账号时，菜单项上可以显示待审核的消息数，其他的账号的菜单项上不显示消息数。（此处是通过菜单项的数量来区别开的）
+         */
+        Log.i("123","list_childId.size(): "+list_childId.size());
+        if (list_childId.size()>1){
+            showMenu2();
+        } else{
+            showMenu();
+        }
+
     }
 
     //显示菜单（第一种方法：不显示消息数）
     private void showMenu(){
         list =new ArrayList<>();
         for (int i = 0; i < list_childName.size(); i++) {
-            list.add(new Mine(list_childName.get(i),R.drawable.pic_order_up));
+            if (list_childId.get(i)!=Constants.ORDER_MANAGER_ZZCGSH &&
+                list_childId.get(i)!=Constants.ORDER_MANAGER_ZZBXSH &&
+                list_childId.get(i)!=Constants.ORDER_MANAGER_SLDCGSH &&
+                list_childId.get(i)!=Constants.ORDER_MANAGER_SLDBXSH
+               )
+            {
+                list.add(new Mine(list_childName.get(i),R.drawable.pic_order_up));
+            }
         }
         adapter=new MineAdapter(OrderManagerActivity.this,list);
         gv_ordermanager.setAdapter(adapter);
