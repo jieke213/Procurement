@@ -48,10 +48,6 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
     private SharedPreferences sp;
     private String access_token;
 
-    private boolean isMyOrder=false;
-    private boolean isReview=false;
-    private boolean isToClaime=false;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,7 +66,6 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
 
 //        showMenu();
         showMenu2();
-        //第三行
     }
 
     //显示菜单（第一种方法：不显示消息数）
@@ -93,7 +88,6 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
         for (int i = 0; i < list_childName.size(); i++) {
             if (list_childId.get(i) == Constants.ORDER_MANAGER_WDDD){
                 list_myreview.add(0,new MyReview(list_childName.get(i),R.drawable.pic_order_up,0));
-                isMyOrder=true;
                 showLeaderBuyReviewNum(access_token);
             }
         }
@@ -123,7 +117,6 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
                     if (list_childId.get(i) == Constants.ORDER_MANAGER_ZZCGSH){
                         Log.i("123","leaderBuyReview_num: "+leaderBuyReview_num);
                         list_myreview.add(1,new MyReview(list_childName.get(i),R.drawable.pic_order_up,leaderBuyReview_num));
-                        isReview=true;
                         showLeadertoClaimeReviewNum(access_token);
                     }
                 }
@@ -158,7 +151,6 @@ public class OrderManagerActivity extends AppCompatActivity implements AdapterVi
                 for (int i = 0; i < list_childName.size(); i++) {
                     if (list_childId.get(i) == Constants.ORDER_MANAGER_ZZBXSH){
                         list_myreview.add(2,new MyReview(list_childName.get(i),R.drawable.pic_order_up,leadertoClaimeReviewNum));
-                        isToClaime=true;
                     }
                 }
                 adapter_review=new ReviewAdapter(OrderManagerActivity.this,list_myreview);
