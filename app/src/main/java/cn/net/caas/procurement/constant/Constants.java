@@ -16,47 +16,47 @@ public class Constants {
     public static final String ACCOUNT_URL="http://b.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=b4e487fb7bf082022d92963973c09c" +
             "d0/77094b36acaf2eddba632a31851001e938019353.jpg";
 
-    public static final String LOGIN_BASE_URL="http://106.14.104.106/platform/app/login.lf?";
-    public static final String ORDER_BASE_URL="http://106.14.104.106/platform/app/order/main/get.lf?";
+    public static final String LOGIN_BASE_URL="https://www.caasbuy.com/platform/app/login.lf?";
+    public static final String ORDER_BASE_URL="https://www.caasbuy.com/platform/app/order/main/get.lf?";
 
-    public static final String TEAMNAME_URL="http://106.14.104.106/platform/app/dept/teams/get.lf?";//获取课题组
-    public static final String LEADER_PASS="http://106.14.104.106/platform/app/order/op/leaderPass.lf?";//课题组长审核通过
-    public static final String LEADER_REFUSE="http://106.14.104.106/platform/app/order/op/leaderRefuse.lf?";//课题组长拒绝
-    public static final String INSTIUTE_PASS="http://106.14.104.106/platform/app/order/op/instiutePass.lf?";//研究所审核通过
-    public static final String INSTIUTE_REFUSE="http://106.14.104.106/platform/app/order/op/instiuteRefuse.lf?";//研究所拒绝
-    public static final String NOTIFICATION="http://106.14.104.106/platform/app/msg/get.lf?";//获取通知
+    public static final String TEAMNAME_URL="https://www.caasbuy.com/platform/app/dept/teams/get.lf?";//获取课题组
+    public static final String LEADER_PASS="https://www.caasbuy.com/platform/app/order/op/leaderPass.lf?";//课题组长审核通过
+    public static final String LEADER_REFUSE="https://www.caasbuy.com/platform/app/order/op/leaderRefuse.lf?";//课题组长拒绝
+    public static final String INSTIUTE_PASS="https://www.caasbuy.com/platform/app/order/op/instiutePass.lf?";//研究所审核通过
+    public static final String INSTIUTE_REFUSE="https://www.caasbuy.com/platform/app/order/op/instiuteRefuse.lf?";//研究所拒绝
+    public static final String NOTIFICATION="https://www.caasbuy.com/platform/app/msg/get.lf?";//获取通知
 
 
 
 
 
     //获取菜单
-    public static final String MENU_URL="http://106.14.104.106/platform/app/menu/get.lf?";//获取菜单
+    public static final String MENU_URL="https://www.caasbuy.com/platform/app/menu/get.lf?";//获取菜单
 
     //组长/首席采购审核
-    public static final String ORDER_LEADER_REVIEW="http://106.14.104.106/platform/app/order/leader/review.lf?";//组长/首席采购审核-待审批订单
-    public static final String ORDER_MAIN_DEPT="http://106.14.104.106/platform/app/order/main/dept/get.lf?";//组长/首席采购审核-所有订单
+    public static final String ORDER_LEADER_REVIEW="https://www.caasbuy.com/platform/app/order/leader/review.lf?";//组长/首席采购审核-待审批订单
+    public static final String ORDER_MAIN_DEPT="https://www.caasbuy.com/platform/app/order/main/dept/get.lf?";//组长/首席采购审核-所有订单
 
     //组长/首席报销审核
-    public static final String ORDER_LEADER_TOCLAIME="http://106.14.104.106/platform/app/order/leader/toClaime.lf?";//组长/首席报销审核 - 待审批订单
-    public static final String ORDER_SUB_DEPT="http://106.14.104.106/platform/app/order/sub/dept/get.lf?";//组长/首席报销审核 - 所有订单
+    public static final String ORDER_LEADER_TOCLAIME="https://www.caasbuy.com/platform/app/order/leader/toClaime.lf?";//组长/首席报销审核 - 待审批订单
+    public static final String ORDER_SUB_DEPT="https://www.caasbuy.com/platform/app/order/sub/dept/get.lf?";//组长/首席报销审核 - 所有订单
 
     //验货人订单
-    public static final String ORDER_CHECKER_PARTARRIVAL="http://106.14.104.106/platform/app/order/checker/partArrival.lf?";//验货人订单-部分到货订单
-    public static final String ORDER_CHECKER_TOCHECK="http://106.14.104.106/platform/app/order/checker/tocheck.lf?";//验货人订单-待验货订单
-    public static final String ORDER_DETAIL="http://106.14.104.106/platform/app/order/detail.lf";//验货人订单-扫码验货-扫码查询接口
+    public static final String ORDER_CHECKER_PARTARRIVAL="https://www.caasbuy.com/platform/app/order/checker/partArrival.lf?";//验货人订单-部分到货订单
+    public static final String ORDER_CHECKER_TOCHECK="https://www.caasbuy.com/platform/app/order/checker/tocheck.lf?";//验货人订单-待验货订单
+    public static final String ORDER_DETAIL="https://www.caasbuy.com/platform/app/order/detail.lf";//验货人订单-扫码验货-扫码查询接口
 
     //我的订单
-    public static final String ORDER_BUYER_NOTPASS="http://106.14.104.106/platform/app/order/buyer/notPass.lf?";//我的订单-失败订单
-    public static final String ORDER_BUYER_ALL="http://106.14.104.106/platform/app/order/buyer/all.lf?";//我的订单-所有订单
-    public static final String ORDER_BUYER_UNCLAIMED="http://106.14.104.106/platform/app/order/buyer/unclaimed.lf?";//我的订单-未报销订单
-    public static final String ORDER_BUYER_DELIVERED="http://106.14.104.106/platform/app/order/buyer/delivered.lf?";//我的订单-未到货订单
+    public static final String ORDER_BUYER_NOTPASS="https://www.caasbuy.com/platform/app/order/buyer/notPass.lf?";//我的订单-失败订单
+    public static final String ORDER_BUYER_ALL="https://www.caasbuy.com/platform/app/order/buyer/all.lf?";//我的订单-所有订单
+    public static final String ORDER_BUYER_UNCLAIMED="https://www.caasbuy.com/platform/app/order/buyer/unclaimed.lf?";//我的订单-未报销订单
+    public static final String ORDER_BUYER_DELIVERED="https://www.caasbuy.com/platform/app/order/buyer/delivered.lf?";//我的订单-未到货订单
 
     //所领导采购审核
-    public static final String ORDER_BOSS_REVIEW="http://106.14.104.106/platform/app/order/boss/review.lf?";//所领导采购审核-待审批订单
+    public static final String ORDER_BOSS_REVIEW="https://www.caasbuy.com/platform/app/order/boss/review.lf?";//所领导采购审核-待审批订单
 
     //所领导报销审核
-    public static final String ORDER_BOSS_TOCLAIME="http://106.14.104.106/platform/app/order/boss/toClaime.lf?";//所领导报销审核  - 待审批订单
+    public static final String ORDER_BOSS_TOCLAIME="https://www.caasbuy.com/platform/app/order/boss/toClaime.lf?";//所领导报销审核  - 待审批订单
 
     //财务报销(同上)
 
@@ -104,24 +104,24 @@ public class Constants {
     /**
      * -----------------------------------------------操作------------------------------------------------------------------
      */
-    public static final String  ORDER_OP_CHECKPASS="http://106.14.104.106/platform/app/order/op/checkPass.lf?";//验货通过
-    public static final String  ORDER_OP_PARTARRIVAL="http://106.14.104.106/platform/app/order/op/partArrival.lf?";//部分到货
-    public static final String  ORDER_OP_COMPLETEREFUND="http://106.14.104.106/platform/app/order/op/completeRefund.lf?";//全部退货
-    public static final String  ORDER_OP_REPLACE="http://106.14.104.106/platform/app/order/op/replace.lf?";//验货人换货
+    public static final String  ORDER_OP_CHECKPASS="https://www.caasbuy.com/platform/app/order/op/checkPass.lf?";//验货通过
+    public static final String  ORDER_OP_PARTARRIVAL="https://www.caasbuy.com/platform/app/order/op/partArrival.lf?";//部分到货
+    public static final String  ORDER_OP_COMPLETEREFUND="https://www.caasbuy.com/platform/app/order/op/completeRefund.lf?";//全部退货
+    public static final String  ORDER_OP_REPLACE="https://www.caasbuy.com/platform/app/order/op/replace.lf?";//验货人换货
 
 
-    public static final String  ORDER_OP_COMPLETECLAIMS="http://106.14.104.106/platform/app/order/op/completeClaims.lf?";//财务报销通过
-    public static final String  ORDER_OP_NOTCOMPLETECLAIMS="http://106.14.104.106/platform/app/order/op/notCompleteClaims.lf?";//财务报销不通过
+    public static final String  ORDER_OP_COMPLETECLAIMS="https://www.caasbuy.com/platform/app/order/op/completeClaims.lf?";//财务报销通过
+    public static final String  ORDER_OP_NOTCOMPLETECLAIMS="https://www.caasbuy.com/platform/app/order/op/notCompleteClaims.lf?";//财务报销不通过
 
 
-    public static final String  ORDER_OP_BUYERCANCEL="http://106.14.104.106/platform/app/order/buyer/cancle.lf?";//采购员取消订单
-    public static final String  ORDER_OP_BUYERAPPLYCLAIMS="http://106.14.104.106/platform/app/order/op/applyClaims.lf?";//采购员申请报销
+    public static final String  ORDER_OP_BUYERCANCEL="https://www.caasbuy.com/platform/app/order/buyer/cancle.lf?";//采购员取消订单
+    public static final String  ORDER_OP_BUYERAPPLYCLAIMS="https://www.caasbuy.com/platform/app/order/op/applyClaims.lf?";//采购员申请报销
 
 
-    public static final String  ORDER_OP_LEADERCLAIMSPASS="http://106.14.104.106/platform/app/order/op/leaderReviewClaimsPass.lf?";//课题组报销通过
-    public static final String  ORDER_OP_LEADERCLAIMSREFUSE="http://106.14.104.106/platform/app/order/op/leaderReviewClaimsRefuse.lf?";//课题组报销不通过
-    public static final String  ORDER_OP_INSTIUTECLAIMSPASS="http://106.14.104.106/platform/app/order/op/instiuteReviewClaimsPass.lf?";//研究所报销通过
-    public static final String  ORDER_OP_INSTIUTECLAIMSREFUSE="http://106.14.104.106/platform/app/order/op/instiuteReviewClaimsRefuse.lf?";//研究所报销不通过
+    public static final String  ORDER_OP_LEADERCLAIMSPASS="https://www.caasbuy.com/platform/app/order/op/leaderReviewClaimsPass.lf?";//课题组报销通过
+    public static final String  ORDER_OP_LEADERCLAIMSREFUSE="https://www.caasbuy.com/platform/app/order/op/leaderReviewClaimsRefuse.lf?";//课题组报销不通过
+    public static final String  ORDER_OP_INSTIUTECLAIMSPASS="https://www.caasbuy.com/platform/app/order/op/instiuteReviewClaimsPass.lf?";//研究所报销通过
+    public static final String  ORDER_OP_INSTIUTECLAIMSREFUSE="https://www.caasbuy.com/platform/app/order/op/instiuteReviewClaimsRefuse.lf?";//研究所报销不通过
 
 
 
