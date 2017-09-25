@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="我国科学家首次发现埃博拉病毒囊膜糖蛋白合成机制" />
+                    android:text="习近平致信祝贺中国农业科学院建院60周年" />
             </LinearLayout>
 
             <LinearLayout
@@ -195,7 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="中国农业科学院陈萌山书记是视察南口基地工作" />
+                    android:text="中国农科院举办建院60周年成就展" />
             </LinearLayout>
 
             <LinearLayout
@@ -215,7 +215,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="失信违规企业曝光台" />
+                    android:text="60载科技兴农铸就大地丰碑
+" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
