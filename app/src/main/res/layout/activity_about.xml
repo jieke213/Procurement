@@ -65,13 +65,25 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 />
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="沪ICP备17024302号-1"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:gravity="center"
                 android:layout_marginTop="5dp"
-                />
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/beian"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 沪ICP备17024302号-1"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
