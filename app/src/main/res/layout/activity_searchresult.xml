@@ -80,11 +80,19 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/image_searchresult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/demo"
-        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/backgroud"
+        >
+        <ImageView
+            android:id="@+id/image_searchresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jingqingqidai"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
 
 </LinearLayout>
